@@ -14,11 +14,11 @@ global-voice-camp/
 ├── js/
 │   ├── script.js     — countdown, multi-step form, interactive tribe map, submission
 │   └── faq.js         — FAQ search, category filter, accordion
-└── images/           — put your real camp photos here
+└── images/           — put . real camp photos here
 ```
 
 HTML pages stay in the root folder on purpose — that keeps clean URLs like
-`yoursite.com/faq.html` when deployed as a static site.
+`nufaglobaledu/faq-ecamp.com/faq.html` when deployed as a static site.
 
 ## 1. Deploy to Vercel
 
@@ -41,8 +41,8 @@ Open `js/script.js` and find the `CONFIG` object near the top. Pick ONE option:
 1. Create a Google Form with matching fields (Full Name, School, Grade, Age, Gender, Parent Name, Parent Phone, Parent Email, Health Notes, Tribe Preference)
 2. In the Form, click ⋮ → **Get pre-filled link**, fill dummy answers, click **Get Link**, and copy it
 3. The link contains `entry.XXXXXXXXX=value` for each field — match those IDs into `CONFIG.formEntryMap`
-4. Copy your Form ID from the URL and set `CONFIG.formActionUrl` to:
-   `https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse`
+4. Copy Form ID from the URL and set `CONFIG.formActionUrl` to:
+   `https://docs.google.com/forms/d/e/._FORM_ID/formResponse`
 
 **Option B — Google Apps Script + Sheet** (more control, needs a bit of setup)
 1. Create a Google Sheet with a tab named `Registrations`
@@ -60,11 +60,11 @@ Open `js/script.js` and find the `CONFIG` object near the top. Pick ONE option:
 
 If `formActionUrl` is filled in, it's used automatically. Leave it empty to fall back to `appsScriptUrl`.
 
-## 3. Add your own photos & video
+## 3. Add photos & video
 
 In `index.html`, find the `<!-- GALLERY / FIELD NOTES -->` section:
-- Replace each `src="https://placehold.co/..."` with your real photo path, e.g. `src="images/day1.jpg"` after dropping the file into the `images/` folder
-- Replace `data-video="REPLACE_WITH_YOUTUBE_ID"` with your real YouTube video ID
+- Replace each `src="https://placehold.co/..."` with . real photo path, e.g. `src="images/day1.jpg"` after dropping the file into the `images/` folder
+- Replace `data-video="REPLACE_WITH_YOUTUBE_ID"` with . real YouTube video ID
 
 ## 4. Adjust dates & pricing
 
@@ -73,4 +73,4 @@ In `index.html`, find the `<!-- GALLERY / FIELD NOTES -->` section:
 
 ## 5. Before going live
 
-- Replace the placeholder WhatsApp number in `faq.html` (`wa.me/6281234567890`) with your real number
+- Replace the placeholder WhatsApp number in `faq.html` (`wa.me/6285156047881`) [Marketing Team]
